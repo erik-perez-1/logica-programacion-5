@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -28,6 +28,19 @@ public class Main {
         diccionario.put("Key", "Clave");
         diccionario.put("Value", "Valor");
 
-       // System.out.println("Estas liston para la prueba de fuego del programador?");
+        //Creamos una nueva lista para guardar las palabras en español
+        List<String> listaEspanol = new ArrayList<>(diccionario.keySet());
+
+        //se desordena la lista con el metodo shuffle
+        Collections.shuffle(listaEspanol);
+
+        // 3. Variables para el juego
+        Scanner teclado = new Scanner(System.in);
+        int correctas = 0;
+        int incorrectas = 0;
+
+        System.out.println("---Estas liston para la prueba de fuego del programador?---");
+
+
     }
 }
